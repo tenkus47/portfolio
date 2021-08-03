@@ -1,0 +1,19 @@
+.homepage{
+    height:80vh;
+    align-items: center;
+}
+.play{
+    top:40%;
+    left:50%;
+    cursor: pointer;
+    transform: translate(-50%,-50%);
+}
+.playIcon{
+    color:white;
+    background-color: rgba(0,0,0,0.4);
+    border-radius: 50%;
+    padding:10px;
+}
+.playIcon:hover{
+    background-color: rgba(0,0,0,0.6);
+}

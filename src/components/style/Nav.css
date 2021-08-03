@@ -1,0 +1,54 @@
+.Navbar ul>.active,ul>.item:hover{
+background-color: rgb(191, 69, 69);
+border-radius: 999px;
+color:white;
+padding:0 15px;
+font-size: smaller;
+display: flex;
+align-items: center;
+text-align: center;
+}
+.Navbar{
+    z-index: 200;
+    position:fixed;
+    width:100vw;
+    display: flex;
+    padding:20px 20px 20px 70px;
+    background-color:#f1f6ff;
+}
+.Navbar ul>li{
+text-align: center;
+
+    margin-right:20px;
+    font-weight: 700;
+    padding:0 7px;
+    cursor: pointer;
+}
+.translate{
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+}
+.translate>img{
+    width:13px;
+    height:23px;
+    object-fit: contain;
+    margin-right:10px;
+}
+.hiddenMenu{
+position:absolute;
+top:0;
+left:0;
+right:0;
+bottom:0;
+width:100vw;
+transition:all 0.3s ease-in-out;
+height:100vh;
+width: 100vw;
+}
+.activemenu{
+    transform: translateY(0);
+}
+.inactivemenu{
+transform: translateY(-100vh);
+}
