@@ -25,10 +25,10 @@ function Nav() {
           <div className=' md:hidden cursor-pointer' onClick={()=>setOpen(true)}>
                <MenuIcon/>
             </div>
-            <div className='flex items-center font-bold uppercase text-center md:pb-0 lg:ml-20 '>
-            <Link to='/'>   <img src={profileImage} alt='profile' className='mr-5 rounded-full h-10 w-10 object-cover ml-10'/>
-                   Tenzin Kunsang</Link> 
-            </div>
+            <Link to='/'> <div className='flex items-center font-bold uppercase text-center md:pb-0 lg:ml-20 '>
+               <img src={profileImage} alt='profile' className='mr-5 rounded-full h-10 w-10 object-cover ml-10'/>
+                   Tenzin Kunsang
+            </div></Link> 
             <div className='Options cursor-pointer md:flex-grow hidden md:block '>
                 <ul className='flex justify-end mr-20'>
                 <li className='Contact'>
