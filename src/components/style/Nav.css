@@ -13,7 +13,7 @@ text-align: center;
     position:fixed;
     width:100vw;
     display: flex;
-    padding:20px 20px 20px 70px;
+    padding:20px 20px 20px 20px;
     background-color:#f1f6ff;
 }
 .Navbar ul>li{
@@ -51,4 +51,7 @@ width: 100vw;
 }
 .inactivemenu{
 transform: translateY(-100vh);
+}
+.icons:hover .hide{
+    display: inline;
 }

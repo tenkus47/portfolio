@@ -17,7 +17,7 @@ function Midpage() {
      }];
 
     return (
-        <div  className='midpage flex flex-col md:flex-row px-10 lg:px-20 pt-20 mb-20 md:mx-20 mr-20'>
+        <div  className='midpage flex flex-col md:flex-row px-1 lg:px-20 pt-20 mb-20 mr-20 md:mr-10'>
             {array.map((item,id)=>(
    <div className='flex w-full flex-col mb-10 rounded p-3 md:w-1/2 lg:w-1/3 bg-gray-400 mx-10  items-center justify-center' key={id} >
        <img src={item.image} alt='imagefile' style={{width:100,objectFit:'contain'}}/>

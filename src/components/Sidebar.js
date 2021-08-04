@@ -8,8 +8,9 @@ function Sidebar() {
 
     const [active,setActive]=useState(0);
     document.addEventListener('scroll',(e)=>{
+    
      if(window.scrollY>=565){
-         if(window.scrollY>1244){
+         if(window.scrollY>1330){
              setActive(2)
          }
          else{
@@ -26,7 +27,8 @@ function Sidebar() {
         {sidelist.map((item)=>(
               <div className='rounded-full icons w-30 h-30 mb-5 ' key={item.id}>
                   <a href={`#${item.name}`}>
-                  <item.icon className={active===item.id ? ('active') : ('hover:bg-blue-300')}/>
+                  <item.icon  className={active===item.id ? ('active') : ('hover:bg-blue-300 icons')}/>
+                  <div className='hide hidden ml-2'>{item.name}</div>
                   </a>
               </div>
         ))}

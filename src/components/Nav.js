@@ -17,14 +17,14 @@ function Nav() {
     }
   },[open])
     return (
-        <div className='Navbar flex flex-row '>
-          <div className=' md:hidden' onClick={()=>setOpen(true)}>
+        <div className='Navbar flex flex-row items-center'>
+          <div className=' md:hidden cursor-pointer' onClick={()=>setOpen(true)}>
                <MenuIcon/>
             </div>
-            <div className='flex-grow font-bold uppercase ml-20 md:pb-0 '>
+            <div className='flex-1 font-bold uppercase text-center md:pb-0 '>
                      Tenzin Kunsang
             </div>
-            <div className='Options md:flex-grow hidden md:block '>
+            <div className='Options cursor-pointer md:flex-grow hidden md:block '>
                 <ul className='flex justify-end mr-20'>
                 <li className='Contact'>
                       <ContactPhoneIcon className='mr-2'/>
@@ -43,10 +43,9 @@ function Nav() {
                       En
                     </li>
                     </ul>
-            </div>
-         
-              <div className={` md:hidden hiddenMenu bg-blue-300 flex flex-col justify-center items-center ${classs}`} >
-              <ClearIcon className='absolute top-10 left-10 font-bold curson-pointer' onClick={()=>setOpen(false)}/>
+            </div>       
+              <div className={` md:hidden hiddenMenu bg-blue-300 flex flex-col justify-center items-center  ${classs}`} >
+              <ClearIcon className='absolute top-4 left-4 font-bold cursor-pointer hover:text-red-500' onClick={()=>setOpen(false)}/>
              <h1 className='text-3xl font-bold hover:text-gray-200 cursor-pointer mr-8'>Contact me</h1>
              <br/>
              <p className='text-3xl font-bold hover:text-gray-200 cursor-pointer mr-4'>Log in</p>
