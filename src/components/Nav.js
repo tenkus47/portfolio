@@ -31,10 +31,7 @@ function Nav() {
             </div></Link> 
             <div className='Options cursor-pointer md:flex-grow hidden md:block '>
                 <ul className='flex justify-end mr-20'>
-                <li className='Contact'>
-                <Link to="/contact">   <ContactPhoneIcon className='mr-2'/>
-                     Contact</Link>
-                    </li>
+                
                     <li className='item w-50'>
                     <Link to="/login">    Log in</Link>
                     </li>
@@ -47,6 +44,11 @@ function Nav() {
                        <img src={flag} alt='flag'/>
                       En
                     </li>
+
+                    <Link to="/contact">   <li className='Contact font-bold mr-2'>
+                 <ContactPhoneIcon className='mr-2' style={{fontSize:15}}/>
+                     Contact
+                    </li></Link>
                     </ul>
             </div>       
               <div className={` md:hidden hiddenMenu bg-blue-300 flex flex-col justify-center items-center  ${classs}`} >
