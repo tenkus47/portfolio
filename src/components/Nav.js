@@ -26,14 +26,14 @@ function Nav() {
                <MenuIcon/>
             </div>
             <div className='flex items-center font-bold uppercase text-center md:pb-0 lg:ml-20 '>
-                   <img src={profileImage} alt='profile' className='mr-5 rounded-full h-10 w-10 object-cover ml-10'/>
-                    <Link to='/'> Tenzin Kunsang</Link> 
+            <Link to='/'>   <img src={profileImage} alt='profile' className='mr-5 rounded-full h-10 w-10 object-cover ml-10'/>
+                   Tenzin Kunsang</Link> 
             </div>
             <div className='Options cursor-pointer md:flex-grow hidden md:block '>
                 <ul className='flex justify-end mr-20'>
                 <li className='Contact'>
-                      <ContactPhoneIcon className='mr-2'/>
-                      <Link to="/contact"> Contact</Link>
+                <Link to="/contact">   <ContactPhoneIcon className='mr-2'/>
+                     Contact</Link>
                     </li>
                     <li className='item w-50'>
                     <Link to="/login">    Log in</Link>
