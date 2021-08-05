@@ -32,11 +32,11 @@ function Nav() {
             <div className='Options cursor-pointer md:flex-grow hidden md:block '>
                 <ul className='flex justify-end mr-20'>
                 
-                    <li className='item w-50'>
+                    <li className='item w-50'  onClick={()=>setOpen(false)}>
                     <Link to="/login">    Log in</Link>
                     </li>
-                    <li className='active item w-100'>
-                    <Link to="/signup">  Sign up</Link>
+                    <li className='active item w-100' onClick={()=>setOpen(false)}>
+                    <Link to="/signup" >  Sign up</Link>
                     </li>
                   
                      
@@ -54,14 +54,14 @@ function Nav() {
               <div className={` md:hidden hiddenMenu bg-blue-300 flex flex-col justify-center items-center  ${classs}`} >
               <ClearIcon className='absolute top-4 left-4 font-bold cursor-pointer hover:text-red-500' onClick={()=>setOpen(false)}/>
              <h1 className='text-3xl font-bold hover:text-gray-200 cursor-pointer mr-8'>
-             <Link to="/contact"> Contact</Link>
+             <Link to="/contact" onClick={()=>setOpen(false)}> Contact</Link>
                </h1>
              <br/>
-             <p className='text-3xl font-bold hover:text-gray-200 cursor-pointer mr-4'>
+             <p className='text-3xl font-bold hover:text-gray-200 cursor-pointer mr-4' onClick={()=>setOpen(false)}>
              <Link to="/login">    Log in</Link>
                </p>
              <br/>
-             <p className='text-3xl font-bold hover:text-gray-200 cursor-pointer' >
+             <p className='text-3xl font-bold hover:text-gray-200 cursor-pointer' onClick={()=>setOpen(false)}>
              <Link to="/signup">  Sign up</Link>
                </p>
 

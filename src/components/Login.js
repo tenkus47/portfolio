@@ -6,8 +6,8 @@ import {
 
 function Login() {
     return (
-<div class="p-20 h-screen w-screen flex flex-col-reverse md:flex-row items-center justify-center bg-gray-200 ">
-  <div class="content text-3xl text-center md:text-left md:ml-40">
+<div class="pt-40 p-20 h-screen w-screen flex flex-col-reverse md:flex-row items-center justify-center bg-gray-200 ">
+  <div class="content text-3xl text-center md:text-left md:ml-40 hidden md:block">
     <h1 class="text-5xl text-blue-500 font-bold mb-10">Stay in Contact</h1>
     <p>Please support and keep connected to us</p>
   </div>
@@ -18,11 +18,11 @@ function Login() {
       <button class="w-full bg-blue-500 text-white p-3 rounded-lg font-semibold text-lg">Login</button>
       <a class="text-blue-400 text-center my-2" href="/">Forgot Pasword?</a>
       <hr />
-         <Link to='/signup'> <button class="w-full bg-green-400 mt-8 mb-4 text-white p-3 rounded-lg font-semibold text-lg hover:bg-green-500">Create New Account</button></Link>
+         <Link to='/signup'> <button class="w-full bg-green-400 mt-8 mb-4 text-white p-3 rounded-lg font-semibold text-lg hover:bg-green-500 ">Create New Account</button></Link>
     </form>
-    <p class="text-center text-sm my-4">
-      <span class="font-semibold text-center w-full">
-          Create a Page</span> for a celebrity, band or business
+    <p class="text-center text-sm my-4 ">
+      <span class="capitalize underline font-semibold text-center w-full">
+          mail us for any query</span>
     </p>
   </div>
 </div>
