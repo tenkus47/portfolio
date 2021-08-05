@@ -16,6 +16,13 @@ import Signup from './components/Signup';
 
 
 function App() {
+const User='data'
+ localStorage.setItem('user',User)
+ console.log(localStorage.getItem('user'))
+ sessionStorage.setItem('user',User)
+ console.log(sessionStorage.getItem('user'))
+ document.cookie='name=tenzinkunsang;expires='+new Date(2022,3,3).toUTCString()
+
   return (
     <div className="App" >
           <Router>

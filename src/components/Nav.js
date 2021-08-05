@@ -51,17 +51,21 @@ function Nav() {
                     </li></Link>
                     </ul>
             </div>       
-              <div className={` md:hidden hiddenMenu bg-blue-300 flex flex-col justify-center items-center  ${classs}`} >
-              <ClearIcon className='absolute top-4 left-4 font-bold cursor-pointer hover:text-red-500' onClick={()=>setOpen(false)}/>
-             <h1 className='text-3xl font-bold hover:text-gray-200 cursor-pointer mr-8'>
+              <div className={` md:hidden hiddenMenu bg-blue-600 flex flex-col justify-center items-center text-white  bg-opacity-90  ${classs}`} >
+              <ClearIcon className='absolute bg-black rounded-full p-1 top-4 left-4 font-bold cursor-pointer hover:text-red-500' onClick={()=>setOpen(false)}/>
+              <h1 className='text-3xl font-bold cursor-pointer mr-8'>
+             <Link to="/portfolio" onClick={()=>setOpen(false)}> Home</Link>
+               </h1>
+             <br/>
+             <h1 className='text-3xl font-bold cursor-pointer mr-8'>
              <Link to="/contact" onClick={()=>setOpen(false)}> Contact</Link>
                </h1>
              <br/>
-             <p className='text-3xl font-bold hover:text-gray-200 cursor-pointer mr-4' onClick={()=>setOpen(false)}>
+             <p className='text-3xl font-bold  cursor-pointer mr-4' onClick={()=>setOpen(false)}>
              <Link to="/login">    Log in</Link>
                </p>
              <br/>
-             <p className='text-3xl font-bold hover:text-gray-200 cursor-pointer' onClick={()=>setOpen(false)}>
+             <p className='text-3xl font-bold  cursor-pointer' onClick={()=>setOpen(false)}>
              <Link to="/signup">  Sign up</Link>
                </p>
 
