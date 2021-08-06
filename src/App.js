@@ -10,18 +10,11 @@ import {
   Route,
 } from "react-router-dom";
 import Contact from './components/Contact';
-import Login from './components/Login';
-import Signup from './components/Signup';
+import Subscribe from './components/Subscribe';
 
 
 
 function App() {
-const User='data'
- localStorage.setItem('user',User)
- console.log(localStorage.getItem('user'))
- sessionStorage.setItem('user',User)
- console.log(sessionStorage.getItem('user'))
- document.cookie='name=tenzinkunsang;expires='+new Date(2022,3,3).toUTCString()
 
   return (
     <div className="App" >
@@ -42,12 +35,10 @@ const User='data'
 <Route path='/contact'>
 <Contact/>
 </Route>
-<Route path='/login'>
-  <Login/>
+<Route path='/subscribe'>
+<Subscribe/>
 </Route>
-<Route path='/signup'>
-<Signup/>
-</Route>
+
 
        </Switch>
 
