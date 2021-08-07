@@ -4,19 +4,20 @@ import 'mapbox-gl/dist/mapbox-gl.css';
 
 import marker from '../static/systemUtility/marker.png'
 
-const mapStyle = {
-    width: '100%',
-    height: 400
-}
 
 
-function Map({locationData}) {
+function Map({locationData,height}) {
     const [showPopup,togglePopup]=useState(false)
     const [viewport, setviewport] = useState({
         latitude: locationData?.latitude,
         longitude: locationData?.longitude,
         zoom: 10
     })
+    
+const mapStyle = {
+    width: '100%',
+    height
+}
     return (
         <ReactMapGL
         mapboxApiAccessToken='pk.eyJ1IjoidGVua3VzNDciLCJhIjoiY2tzMWpjdmF3MGtxdDJ3cGU5YTE2dmZteiJ9.3KssrguiXhgGXRyXylX3Cw'
