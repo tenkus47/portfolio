@@ -1,5 +1,7 @@
 import ReactMapGL,{Marker,Popup} from 'react-map-gl';
 import React,{useState} from 'react'
+import 'mapbox-gl/dist/mapbox-gl.css';
+
 import marker from '../static/systemUtility/marker.png'
 
 const mapStyle = {
@@ -37,7 +39,10 @@ function Map({locationData}) {
           onClose={() => togglePopup(false)}
           anchor="bottom" >
           <div 
-          className='font-bold '>your location</div>
+          className='font-bold '>
+              <p>latitude:{locationData?.latitude}</p>
+              <p>longitude:{locationData?.longitude}</p>
+          </div>
         </Popup>}
       </ReactMapGL>
     )
