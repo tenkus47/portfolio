@@ -1,3 +1,5 @@
+import dot from 'dotenv'
+
 import Body from './components/Body'
 import Midpage from './components/Midpage'
 import Navbar from './components/Nav'
@@ -12,10 +14,11 @@ import {
 import Contact from './components/Contact';
 import Subscribe from './components/Subscribe';
 
+dot.config();
 
 
 function App() {
-
+  
   return (
     <div className="App" >
           <Router>
